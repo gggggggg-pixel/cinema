@@ -7,6 +7,7 @@
         <title>Online Cinema</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/normalize.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="https://fonts.googleapis.com">
         <link rel="stylesheet" href="https://fonts.gstatis.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
@@ -20,6 +21,15 @@
                     <img src="img/logo.png" alt="logo">
                 </a>
                 <nav class="nav">
+                    <button class="m-menu">
+
+                        <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="0.5" x2="15" y2="0.5" stroke="white"/>
+                            <line y1="5.5" x2="15" y2="5.5" stroke="white"/>
+                            <line y1="10.5" x2="15" y2="10.5" stroke="white"/>
+                        </svg>
+    
+                    </button>
                     <ul class="menu">
                         <li class="menu-item">
                             <a href="#" class="menu-link">Главная</a>
@@ -72,7 +82,9 @@
                     <!-- /.film-details -->
                 </div>
                 <!-- /.film-info -->
-                <a href="https://www.kinopoisk.ru/film/843649/video/" class="film-trailer">
+                <a data-fancybox="video-gallery" 
+                data-scr="https://www.youtube.com/watch?v=drGgZNRb_Ok" 
+                href="#" class="film-trailer">
                     <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="50" cy="50" r="50" fill="white"/>
                         <g clip-path="url(#clip0_1_158)">
@@ -140,7 +152,8 @@
 
         <div class="scheme container">
 
-            <svg class="scheme-svg" viewBox="0 0 1170 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="scheme-svg" viewBox="0 0 1170 600" 
+            fill="none" xmlns="http://www.w3.org/2000/svg">
     
                 <path class="light" d="M128 115L201.04 48H968.96L1042 115H128Z" fill="url(#paint0_linear_13_374)"/>
                 <line x1="76" y1="43" x2="1094" y2="43" stroke="black" stroke-opacity="0.39" stroke-width="10"/>
@@ -359,6 +372,7 @@
              <a href="https://hd.kinopoisk.ru/" class="button button-pay">Перейти к оплате</a>
          </div>
          <!-- /.price -->
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
         <script src="javascript/javascripts.js"></script>
     </body>
 </html>
